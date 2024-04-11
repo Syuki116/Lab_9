@@ -7,8 +7,6 @@ while True:
         encode = input("Please enter your password to encode: ")
 
         def encode_password(encode):
-            if len(encode) != 8:
-                return "Error: Password must be 8 digits long"
             encoded_password = ""
             for digit in encode:
                 encoded_digit = (int(digit) + 3) % 10

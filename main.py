@@ -25,3 +25,10 @@ while True:
 
     elif option == 3:
         break
+
+def decode_password(encoded_password):
+    result = ""
+    for i in encoded_password:
+        number = int(i)
+        result += str(number - 3)
+    return result #
